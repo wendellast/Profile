@@ -1,24 +1,25 @@
 /* RESET */
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-ul{
+ul {
     list-style: none;
 }
 
-a{
+a {
     text-decoration: none;
     color: #000;
 }
+
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
 
 /* INDEX */
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
-body{
+body {
     background-image: url(../image/background.gif);
     background-repeat: no-repeat;
     background-size: cover;
@@ -34,19 +35,19 @@ body{
     padding: 30px;
 }
 
-.card{
+.card {
     background-color: #2727279a;
-    width:380px;
-    border: 1,9px solid #3bb5fc;
+    width: 380px;
+    border: 1, 9px solid #3bb5fc;
     border-radius: 15px;
     overflow: hidden;
     outline: none;
-    border-color:   #3bb5fc;
-    box-shadow: 0 0 50px   #3bb5fc;
+    border-color: #3bb5fc;
+    box-shadow: 0 0 50px #3bb5fc;
 }
 
 
-.card .information{
+.card .information {
     padding-top: 20px;
     display: flex;
     flex-direction: column;
@@ -54,36 +55,36 @@ body{
     gap: 7px;
 }
 
-.card .information img{
+.card .information img {
     border-radius: 70px;
-    border: 1,9x solid  #3bb5fc;
+    border: 1, 9x solid #3bb5fc;
     outline: none;
     border-color: #3bb5fc;
     box-shadow: 0 0 30px #3bb5fc;
 }
 
-.card .information .name{
+.card .information .name {
     font-size: 30px;
     color: #f3f3f3;
 
 }
 
-.card .information .job{
+.card .information .job {
     font-size: 25px;
     color: #f3f3f3;
 }
 
 /* TAB */
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
-.card .content{
+.card .content {
     margin-top: 15px;
 }
 
-.card .tabs{
+.card .tabs {
     display: flex;
 }
 
-.card .content .tab{
+.card .content .tab {
     width: 50%;
     display: flex;
     justify-content: center;
@@ -93,16 +94,97 @@ body{
 }
 
 
-.card .tabs img{
+.card .tabs img {
     width: 30px;
 }
 
-.card .tabs .aba .selected .tab-information{
+.card .tabs .aba .selected .tab-information {
     background-color: #272727;
 }
 
-.card .tabs .tab:hover{
+.card .tabs .tab:hover {
     background-color: #272727;
+}
+
+/* Section2 */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+
+.tab-information .info {
+    min-height: 260px;
+    padding: 15px;
+    display: none;
+}
+
+.tab-information .info .selected {
+    display: block;
+}
+
+.tab-information .sub-title {
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.tab-information .description {
+    font-size: 22px;
+    max-height: 180px;
+    overflow-y: auto;
+    padding-right: 15px;
+}
+
+.tab-information .description span {
+    color: #02d08f;
+}
+
+/* Socia Media */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    max-height: 180px;
+    overflow-y: auto;
+}
+
+.social-media li a {
+    width: 250px;
+    display: block;
+    color: #f3f3f3;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    transition: background 1s;
+}
+
+.social-media li a:hover {
+    background-color: #ffee00;
+
+}
+
+.social-media .linkedin {
+    background-color: #06c185;
+}
+
+.social-media .linkedin :hover {
+    background-color: #ffee00e8;
+}
+
+.social-media .github {
+    background-color: #1d87bd;
+}
+
+.social-media .github:hover {
+    background-color: #ffee00e8;
+}
+
+.social-media .instagram {
+    background-color: rgb(255, 41, 41);
+}
+
+.social-media .instagram:hover {
+    background-color: #ffee00e8;
 }
 
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
