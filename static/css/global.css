@@ -1,0 +1,108 @@
+/* RESET */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+
+/* INDEX */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+body{
+    background-image: url(../image/background.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    font-family: 'VT323', monospace;
+    color: #f3f3f3;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 30px;
+}
+
+.card{
+    background-color: #2727279a;
+    width:380px;
+    border: 1,9px solid #3bb5fc;
+    border-radius: 15px;
+    overflow: hidden;
+    outline: none;
+    border-color:   #3bb5fc;
+    box-shadow: 0 0 50px   #3bb5fc;
+}
+
+
+.card .information{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+}
+
+.card .information img{
+    border-radius: 70px;
+    border: 1,9x solid  #3bb5fc;
+    outline: none;
+    border-color: #3bb5fc;
+    box-shadow: 0 0 30px #3bb5fc;
+}
+
+.card .information .name{
+    font-size: 30px;
+    color: #f3f3f3;
+
+}
+
+.card .information .job{
+    font-size: 25px;
+    color: #f3f3f3;
+}
+
+/* TAB */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+.card .content{
+    margin-top: 15px;
+}
+
+.card .tabs{
+    display: flex;
+}
+
+.card .content .tab{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+
+.card .tabs img{
+    width: 30px;
+}
+
+.card .tabs .aba .selected .tab-information{
+    background-color: #272727;
+}
+
+.card .tabs .tab:hover{
+    background-color: #272727;
+}
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
