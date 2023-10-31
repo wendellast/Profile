@@ -184,14 +184,14 @@ body {
 
 /* Audio */
 #minhaMusica {
-    width: 83%;
+    width: 12rem;
     margin:20px 10px;
     background-color: #2727279a;
     border: 1.9px solid #3bb5fc;
     border-radius: 30px;
     outline: none;
     border-color: #3bb5fc;
-    box-shadow: 0 0 50px #3bb5fc;
+    box-shadow: 0 0 20px #3bb5fc;
 }
 #minhaMusica::-webkit-media-controls-panel {
     background-color: #07070741;
