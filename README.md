@@ -34,6 +34,7 @@ Este projeto está licenciado sob a licença MIT.
 
 ### Exemplo
 
+![Minha Imagem](https://raw.githubusercontent.com/wendellast/Profile/main/static/image/exemple.png)
 
 
 
