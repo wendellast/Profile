@@ -3,45 +3,47 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet" />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
     <!-- sheet -->
-    <link rel="stylesheet" href="static/css/scrool.css">
     <link rel="stylesheet" href="static/css/global.css">
+    <link rel="stylesheet" href="static/css/scrool.css">
 
-    <title>Profile | Wendellast</title>
+
+    <title>Perfil | Wendel Alves</title>
 </head>
 
 <body>
-    <main class="card">
-        <section class="information">
-            <picture><img src="static/image/photo_profile.png" alt="Photo Profile" /></picture>
+    <main class="business-card">
+        <div class="my-information">
+            <img src="static/image/photo_profile.png" alt="profile picture" />
             <h1 class="name">Wendel Alves</h1>
-            <h2 class="job">BackEnd</h2>
-        </section>
+            <h2 class="job-title">Back-End</h2>
+        </div>
 
-        <section class="content">
+        <div class="content">
             <ul class="tabs">
-                <li class="tab about-me-tab selected">
-                    <picture><img src="static/image/animation_gif3.gif" alt="Gif southPark " /></picture>
+
+                <li id="about-me" class="tab selected">
+                    <img src="static/image/animation_gif2.gif" alt="about me icon" />
                 </li>
-                <li class="tab social-media-tab selected">
-                    <picture><img src="static/image/animation_gif2.gif" alt="Gif gatinho" /></picture>
+                <li id="my-networks" class="tab id= my-networks">
+                    <img src="static/image/animation_gif3.gif" alt="social media icon" />
                 </li>
             </ul>
 
-            <div class="tab-information">
-                <div class="about-me-information info">
-                    <h3 class="sub-title">Sobre</h3>
-                    <div class="description">
-                        <p><strong>Olá, Mundo!</strong> Meu nome é <strong>Wendel Alves</strong> , Seja bem-vindo(a)!
-                        </p>
+            <div class="information-tabs">
+                <div id="information-about-me" class="information selected">
+                    <h3 class="sub-title">About</h3>
 
+                    <div class="description">
+                        <p><strong>Olá, Mundo!</strong> Meu nome é <strong>Wendel Alves</strong>, Seja bem-vindo(a)!
+                        </p>
+                        <br>
                         <p>
                             "Sou um entusiasta de Tecnologia da Informação, atualmente focado na especialização em
                             <span>Informática para Web</span>. Com intenção de mergulhar no mundo da programação no
@@ -49,23 +51,48 @@
                             linguagens de programação <span>Python, Java e JavaScript</span>. Este projeto foi criado
                             com um propósito: aprimorar meu conhecimento e habilidades nessas linguagens."
                         </p>
+                        <br>
+                        <audio id="minhaMusica" controls autoplay>
+                            <source src="static/music/coffe.mp3" type="audio/mp3">
+                        </audio>
                     </div>
                 </div>
 
-                <div class="tab-information-social-media info">
-                    <h3 class="sub-title">Minhas Redes</h3>
-                    <ul class="social-media"
-                        <li><a  class="linkedin" href="https://wendellast.github.io/Config/">LinkedIn</a></li>
-                        <li><a class="github"  href="https://github.com/wendellast">GitHub</a></li>
-                        <li><a class="instagram" href="https://www.instagram.com/wendellastwa/">Instagram</a></li>
+                <div id="information-my-networks" class="information">
+                    <h3 class="sub-title">Redes Sociais</h3>
+
+                    <ul class="social-networks">
                         <li>
-                            <picture><img src="static/image/animation_gif1.gif" alt="Gif Animation"></picture></a>
+                            <a class="linkedin" href="https://wendellast.github.io/Config/" target="_blank">LinkedIn</a>
+                        </li>
+                        <li>
+                            <a class="github" href="https://github.com/wendellast" target="_blank">Github</a>
+                        </li>
+                        <li>
+                            <a class="instagram" href="https://www.instagram.com/wendellastwa/"
+                                target="_blank">Instagram</a>
+                        </li>
+                        <li>
+                            <picture><img src="static/image/animation_gif1.gif" alt="Pt"></picture>
                         </li>
                     </ul>
                 </div>
+
             </div>
-        </section>
+        </div>
     </main>
+
+
+
+    <script src="static/src/index.js"></script>
+    <script>
+        var minhaMusica = document.getElementById("minhaMusica");
+        minhaMusica.play().catch(function(error) {
+
+        });
+    </script>
+
+
 </body>
 
 </html>

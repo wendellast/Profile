@@ -1,5 +1,3 @@
-/* RESET */
-/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
 * {
     margin: 0;
     padding: 0;
@@ -15,10 +13,6 @@ a {
     color: #000;
 }
 
-/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
-
-/* INDEX */
-/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
 body {
     background-image: url(../image/background.gif);
     background-repeat: no-repeat;
@@ -35,10 +29,10 @@ body {
     padding: 30px;
 }
 
-.card {
+.business-card {
     background-color: #2727279a;
     width: 380px;
-    border: 1, 9px solid #3bb5fc;
+    border: 1.9px solid #3bb5fc;
     border-radius: 15px;
     overflow: hidden;
     outline: none;
@@ -46,8 +40,7 @@ body {
     box-shadow: 0 0 50px #3bb5fc;
 }
 
-
-.card .information {
+.business-card .my-information {
     padding-top: 20px;
     display: flex;
     flex-direction: column;
@@ -55,36 +48,33 @@ body {
     gap: 7px;
 }
 
-.card .information img {
+.business-card .my-information img {
     border-radius: 70px;
-    border: 1, 9x solid #3bb5fc;
+    border: 1.9px solid #3bb5fc;
     outline: none;
     border-color: #3bb5fc;
     box-shadow: 0 0 30px #3bb5fc;
 }
 
-.card .information .name {
+.business-card .my-information .name {
     font-size: 30px;
     color: #f3f3f3;
-
 }
 
-.card .information .job {
+.business-card .my-information .job-title {
     font-size: 25px;
     color: #f3f3f3;
 }
 
-/* TAB */
-/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
-.card .content {
+.business-card .content {
     margin-top: 15px;
 }
 
-.card .tabs {
+.business-card .tabs {
     display: flex;
 }
 
-.card .content .tab {
+.business-card .tabs .tab {
     width: 50%;
     display: flex;
     justify-content: center;
@@ -93,53 +83,50 @@ body {
     transition: background-color 0.2s ease-in-out;
 }
 
-
-.card .tabs img {
-    width: 30px;
+.business-card .tabs img {
+    width: 5rem;
 }
 
-.card .tabs .aba .selected .tab-information {
+.business-card .tabs .tab.selected {
     background-color: #272727;
 }
 
-.card .tabs .tab:hover {
+.business-card .information-tabs {
     background-color: #272727;
 }
 
-/* Section2 */
-/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+.business-card .tabs .tab:hover {
+    background-color: #272727;
+}
 
-.tab-information .info {
+.information-tabs .information {
     min-height: 260px;
     padding: 15px;
     display: none;
 }
 
-.tab-information .info .selected {
+.information-tabs .information.selected {
     display: block;
 }
 
-.tab-information .sub-title {
+.information-tabs .sub-title {
     font-size: 22px;
     margin-bottom: 25px;
     text-align: center;
 }
 
-.tab-information .description {
+.information-tabs .description {
     font-size: 22px;
     max-height: 180px;
     overflow-y: auto;
     padding-right: 15px;
 }
 
-.tab-information .description span {
+.information-tabs .description span {
     color: #02d08f;
 }
 
-/* Socia Media */
-/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
-
-.social-media {
+.social-networks {
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -148,43 +135,48 @@ body {
     overflow-y: auto;
 }
 
-.social-media li a {
+
+.social-networks li a {
     width: 250px;
     display: block;
     color: #f3f3f3;
     text-align: center;
+    border-radius: 4%;
     padding: 10px;
     font-size: 20px;
     transition: background 1s;
+    border: 2px solid #000;
 }
 
-.social-media li a:hover {
+.social-networks li a:hover {
     background-color: #ffee00;
 
 }
 
-.social-media .linkedin {
+
+.social-networks .linkedin {
     background-color: #06c185;
 }
 
-.social-media .linkedin :hover {
+
+.social-networks .linkedin :hover {
     background-color: #ffee00e8;
 }
 
-.social-media .github {
+
+
+.social-networks .github {
     background-color: #1d87bd;
 }
 
-.social-media .github:hover {
+.social-networks .github:hover {
     background-color: #ffee00e8;
 }
 
-.social-media .instagram {
+.social-networks .instagram {
     background-color: rgb(255, 41, 41);
 }
 
-.social-media .instagram:hover {
+.social-networks .instagram:hover {
     background-color: #ffee00e8;
 }
-
-/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
