@@ -9,7 +9,7 @@ Um site pessoal simples para Wendel Alves, um entusiasta de Tecnologia da Inform
 ### Recursos
 
 * Uma página inicial com informações básicas sobre Wendel, como seu nome, profissão e links para suas redes sociais.
-* Uma página "Sobre mim" com uma descrição mais detalhada de Wendel, seus interesses e seus objetivos profissionais.
+* Uma página "Sobre mim" com uma descrição mais detalhada, seus interesses e seus objetivos profissionais.
 * Uma página "Redes Sociais" com links para os perfis de Wendel nas principais redes sociais.
 * Um design responsivo que adapta o layout do site para diferentes tamanhos de tela.
 
