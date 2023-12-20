@@ -1,6 +1,5 @@
 // Get all the tabs
 const tabs = document.querySelectorAll(".tab");
-const audio = document.getElementById("mymusic");
 
 // Loop through the tabs
 tabs.forEach((tab) => {
@@ -45,11 +44,3 @@ function showTab(tab) {
     // Add the "selected" class to the information for the clicked tab
     information.classList.add("selected");
 }
-
-
-// MUSIC PLAYER
-audio.play().then(function() {
-    audio.muted = false;
-});
-
-audio.play();
