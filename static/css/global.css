@@ -181,6 +181,15 @@ body {
     background-color: #ffee00e8;
 }
 
+.social-networks .portfolio {
+    background-color: #a395e9
+}
+
+
+.social-networks .portfolio:hover {
+    background-color: #ffee00e8;
+}
+
 
 /* Audio */
 #minhaMusica {
