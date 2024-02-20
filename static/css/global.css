@@ -49,6 +49,8 @@ body {
 }
 
 .business-card .my-information img {
+    width: 11rem;
+    height: 10rem;
     border-radius: 70px;
     border: 1.9px solid #3bb5fc;
     outline: none;
