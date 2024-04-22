@@ -183,6 +183,15 @@ body {
     background-color: #ffee00e8;
 }
 
+.social-networks .discord {
+    background-color: rgb(49, 95, 247);
+}
+
+.social-networks .discord:hover {
+    background-color: #ffee00e8;
+}
+
+
 .social-networks .portfolio {
     background-color: #a395e9
 }
