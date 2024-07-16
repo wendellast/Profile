@@ -1,16 +1,13 @@
-### Nome do projeto
-
-Perfil pessoal de Wendel Alves
 
 ### Descrição
 
-Um site pessoal simples para Wendel Alves, um entusiasta de Tecnologia da Informação com foco em Informática para Web. O site permite que Wendel compartilhe informações sobre si mesmo, suas habilidades e seus projetos.
+O projeto consiste em um site simples que serve como um link para informações do usuário. Inclui uma breve descrição sobre ele e links para contatos e redes sociais.
 
 ### Recursos
 
-* Uma página inicial com informações básicas sobre Wendel, como seu nome, profissão e links para suas redes sociais.
+* Uma página inicial com informações básicas sobre o usuario, como seu nome, profissão e links para suas redes sociais.
 * Uma página "Sobre mim" com uma descrição mais detalhada, seus interesses e seus objetivos profissionais.
-* Uma página "Redes Sociais" com links para os perfis de Wendel nas principais redes sociais.
+* Uma página "Redes Sociais" com links para os perfis do usuario nas principais redes sociais.
 * Um design responsivo que adapta o layout do site para diferentes tamanhos de tela.
 
 ### Dependências
@@ -28,13 +25,10 @@ Um site pessoal simples para Wendel Alves, um entusiasta de Tecnologia da Inform
 
 São bem-vindas contribuições de todos os tipos, desde melhorias no código-fonte até sugestões de novos recursos. Para contribuir, basta abrir uma solicitação pull no repositório do projeto.
 
-### Licença
-
-Este projeto está licenciado sob a licença MIT.
 
 ### Exemplo
 
-![Minha Imagem](https://raw.githubusercontent.com/wendellast/Profile/main/static/image/exemple.png)
+![Minha Imagem](static/image/exemple.png)
 
 
 
