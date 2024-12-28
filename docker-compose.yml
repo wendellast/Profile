@@ -1,0 +1,14 @@
+services:
+    profile:
+        build:
+            context: .
+            dockerfile: Dockerfile
+
+        env_file:
+            - .env
+        ports:
+            - "${PORT_PROFILE}:${PORT_PROFILE}"
+
+        volumes:
+            - ./static:/app/static
+

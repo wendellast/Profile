@@ -12,6 +12,7 @@ O projeto consiste em um site simples que serve como um link para informações 
 
 ### Dependências
 
+* Go
 * HTML
 * CSS
 * JavaScript
