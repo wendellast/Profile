@@ -3,6 +3,7 @@ services:
         build:
             context: .
             dockerfile: Dockerfile
+        container_name: profile
 
         env_file:
             - .env
@@ -11,4 +12,9 @@ services:
 
         volumes:
             - ./static:/app/static
+        networks:
+            - project_network
 
+networks:
+  project_network:
+    external: true
