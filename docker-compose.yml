@@ -15,6 +15,7 @@ services:
         networks:
             - project_network
 
+        restart: always
 networks:
   project_network:
     external: true
