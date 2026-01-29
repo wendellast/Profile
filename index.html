@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-Br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8" />
@@ -20,17 +20,22 @@
     <link rel="mask-icon" href="assets/favicons/safari-pinned-tab.svg" color="#5bbad5">
     <link rel="shortcut icon" href="assets/favicons/favicon.ico">
 
-    <title>Perfil | Wendel Alves</title>
+    <title>Profile | Wendel Alves</title>
 </head>
 
 <body>
     <main class="business-card">
+        <div class="language-switcher">
+            <button class="lang-btn active" data-lang="en">EN 🇺🇸</button>
+            <button class="lang-btn" data-lang="pt">PT 🇧🇷</button>
+        </div>
+
         <div class="my-information">
             <picture>
                 <img src="static/image/profile.png" alt="Photo profile">
             </picture>
             <h1 class="name">Wendel Alves</h1>
-            <h2 class="job-title">Back-End</h2>
+            <h2 class="job-title">Software Developer</h2>
             <audio id="minhaMusica" controls autoplay>
                 <source src="static/music/coffe.mp3" type="audio/mp3">
             </audio>
@@ -38,63 +43,55 @@
 
         <div class="content">
             <ul class="tabs">
-
                 <li id="about-me" class="tab selected">
                     <img src="static/image/animation_gif2.gif" alt="about me icon" />
+                    <span class="tab-label" data-i18n="aboutTab">About Me</span>
                 </li>
-                <li id="my-networks" class="tab id= my-networks">
+                <li id="my-networks" class="tab">
                     <img src="static/image/animation_gif3.gif" alt="social media icon" />
+                    <span class="tab-label" data-i18n="socialTab">Social Media</span>
                 </li>
             </ul>
 
             <div class="information-tabs">
                 <div id="information-about-me" class="information selected">
-                    <h3 class="sub-title">About</h3>
+                    <h3 class="sub-title" data-i18n="aboutTitle">About</h3>
 
                     <div class="description">
-                        <p><span>Olá, Mundo!</span> Meu nome é <span>Wendel Alves</span>, Seja bem-vindo(a)!
+                        <p data-i18n="greeting"><span>Hello, World!</span> My name is <span>Wendel Alves</span>, Welcome!</p>
+                        <br>
+                        <p data-i18n="description">
+                            I am a <span>software developer.</span>
+                            Welcome to my profile! 🚀 <span>Feel free to explore and test my projects</span>. If you have any questions or want to get in touch, I'm available! 📧👨‍💻
                         </p>
                         <br>
-                        <p>
-                            Eu sou <span>desenvolvedor de software.</span>
-                            Bem-vindo ao link do meu perfil! 🚀 <span>Fique à vontade para explorar e testar meus projetos</span> . Se tiver alguma dúvida ou quiser entrar em contato, estou
-                            à disposição! 📧👨‍💻
-                        </p>
-                        <br>
-
                     </div>
                 </div>
 
                 <div id="information-my-networks" class="information">
-                    <h3 class="sub-title">Redes Sociais</h3>
+                    <h3 class="sub-title" data-i18n="socialTitle">Social Media</h3>
 
                     <ul class="social-networks">
                         <li>
-                            <a class="portfolio" href="https://wendellast.dev/"
-                                target="_blank">Portfolio</a>
+                            <a class="portfolio" href="https://wendellast.dev/" target="_blank">Portfolio</a>
                         </li>
                         <li>
-                            <a class="linkedin" href="https://www.linkedin.com/in/wendellast/"
-                                target="_blank">LinkedIn</a>
+                            <a class="linkedin" href="https://www.linkedin.com/in/wendellast/" target="_blank">LinkedIn</a>
                         </li>
                         <li>
                             <a class="github" href="https://github.com/wendellast" target="_blank">Github</a>
                         </li>
                         <li>
-                            <a class="instagram" href="https://www.instagram.com/wendellastwa/"
-                                target="_blank">Instagram</a>
+                            <a class="instagram" href="https://www.instagram.com/wendellastwa/" target="_blank">Instagram</a>
                         </li>
                         <li>
-                            <a class="discord" href="https://discord.com/users/wendellast"
-                                target="_blank">Discord</a>
+                            <a class="discord" href="https://discord.com/users/wendellast" target="_blank">Discord</a>
                         </li>
-
                         <li>
-                            <picture><img src="static/image/animation_gif1.gif" alt="Pt"></picture>
+                            <picture><img src="static/image/animation_gif1.gif" alt="Animation"></picture>
                         </li>
                     </ul>
                 </div>
-
             </div>
         </div>
     </main>
@@ -104,12 +101,8 @@
     <script src="static/src/index.js"></script>
     <script>
         var myMusic = document.getElementById("minhaMusica");
-        myMusic.play().catch(function (error) {
-
-        });
+        myMusic.play().catch(function (error) {});
     </script>
-
-
 </body>
 
 </html>
