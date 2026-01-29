@@ -4,16 +4,16 @@ const translations = {
         socialTab: "Social Media",
         aboutTitle: "About",
         socialTitle: "Social Media",
-        greeting: "Hello, World! My name is Wendel Alves, Welcome!",
-        description: "I am a software developer. Welcome to my profile! 🚀 Feel free to explore and test my projects. If you have any questions or want to get in touch, I'm available! 📧👨‍💻"
+        greeting: "<span>Hello, World!</span> My name is <span>Wendel Alves</span>, Welcome!",
+        description: "I am a <span>software developer.</span> Welcome to my profile! 🚀 <span>Feel free to explore and test my projects</span>. If you have any questions or want to get in touch, I'm available! 📧👨‍💻"
     },
     pt: {
         aboutTab: "Sobre Mim",
         socialTab: "Redes Sociais",
         aboutTitle: "Sobre",
         socialTitle: "Redes Sociais",
-        greeting: "Olá, Mundo! Meu nome é Wendel Alves, Seja bem-vindo(a)!",
-        description: "Eu sou desenvolvedor de software. Bem-vindo ao link do meu perfil! 🚀 Fique à vontade para explorar e testar meus projetos. Se tiver alguma dúvida ou quiser entrar em contato, estou à disposição! 📧👨‍💻"
+        greeting: "<span>Olá, Mundo!</span> Meu nome é <span>Wendel Alves</span>, Seja bem-vindo(a)!",
+        description: "Eu sou <span>desenvolvedor de software.</span> Bem-vindo ao link do meu perfil! 🚀 <span>Fique à vontade para explorar e testar meus projetos</span>. Se tiver alguma dúvida ou quiser entrar em contato, estou à disposição! 📧👨‍💻"
     }
 };
 
@@ -24,17 +24,7 @@ function changeLanguage(lang) {
     document.querySelectorAll('[data-i18n]').forEach(element => {
         const key = element.getAttribute('data-i18n');
         if (translations[lang][key]) {
-            const translation = translations[lang][key];
-            if (element.innerHTML.includes('<span>')) {
-                const spans = translation.match(/<span>.*?<\/span>/g) || [];
-                let content = translation;
-                spans.forEach(span => {
-                    content = content.replace(span, span);
-                });
-                element.innerHTML = content;
-            } else {
-                element.textContent = translation;
-            }
+            element.innerHTML = translations[lang][key];
         }
     });
 
